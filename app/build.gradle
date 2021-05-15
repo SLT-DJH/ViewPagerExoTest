@@ -50,6 +50,13 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
     //exoplayer
-    def exoplayer_version = '2.13.3'
-    implementation "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    def exoplayer_version = '2.11.0'
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$exoplayer_version"
+
+    //kohii
+    def kohii_version = "1.1.0.2011003"
+    implementation "im.ene.kohii:kohii-core:$kohii_version" // core library
+    implementation "im.ene.kohii:kohii-exoplayer:$kohii_version" // default support for ExoPlayer
 }
